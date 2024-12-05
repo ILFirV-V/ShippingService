@@ -12,4 +12,16 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ShippingService.Email.Core\ShippingService.Email.Core.csproj" />
+      <ProjectReference Include="..\ShippingService.Email.Domain\ShippingService.Email.Domain.csproj" />
+      <ProjectReference Include="..\ShippingService.Email.Hangfire\ShippingService.Email.Hangfire.csproj" />
+      <ProjectReference Include="..\ShippingService.Email.Identity.Jwt\ShippingService.Email.Identity.Jwt.csproj" />
+      <ProjectReference Include="..\ShippingService.Email.SendLogic\ShippingService.Email.SendLogic.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Models\" />
+    </ItemGroup>
+
 </Project>
